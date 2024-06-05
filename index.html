@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        label, input, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+        input, button {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+            display: none;
+        }
+    </style> <!-- css ใช้ chatgpt นะครับ -->
+</head>
+<body>
+    <div class="container">
+        <h1>แปลงค่าเงิน</h1>
+        <label for="amount">THB:</label>
+        <input type="number" id="amount" placeholder="ระบุจำนวน">
+        <button onclick="con()">แปลง</button>
+        <div id="result" class="result">
+            นี่คั้บบ : <span id="ex"></span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
